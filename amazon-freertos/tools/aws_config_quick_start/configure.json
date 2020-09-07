@@ -1,0 +1,7 @@
+{
+    "afr_source_dir": "/home/amazon-freertos",
+    "thing_name": "my_device",
+    "wifi_ssid": "",
+    "wifi_password": "",
+    "wifi_security": "eWiFiSecurityWPA2"
+}
