@@ -27,7 +27,7 @@ This is my summer intern project at [Ganzin Tech](https://ganzin.com/).
   * [Eyetracking](#eyetracking)
     * [Algorithm](#algorithm)
     * [Bright Dot Detection](#bright-dot-detection)
-    * [Frequency Calculation](#frequency calculation)
+    * [Frequency Calculation](#frequency-calculation)
     * [Gaze](#gaze)
 * [Demo Video](#demo-video)
 
@@ -79,7 +79,7 @@ You should have the following ready before we start.
 * LED (the light you are going to control)
 * Echo Dot (or you can use **Amazon Alexa** app)
 
-<img src="images/alexa_app.jpg" style="zoom: 25%;float:left" />
+<img src="images/alexa_app.jpg" style="zoom: 10%;float:left" />
 
 *With eye-tracking,*
 
@@ -125,7 +125,7 @@ You should have the following ready before we start.
 
    For example, there are only 2 possible states for "switch", namely "on" and "off".  Therefore, I created a custom slot type "LightStatus", with its value "on" and "off".  As for "brightness",  I set "brighten" and "dim" as its accepted values.  Lastly, the slot types for slots "number" and "LightID" is AMAZON.NUMBER, which converts numeric words (“five”) into digits (such as “5”).
 
-   <img src="images/slot_type.png" style="zoom:60%;float:left" />
+   <img src="images/slot_type.png" style="zoom:45%;float:left" />
 
 5. In AWS console, go to Services/IAM.  Create a custom **IAM** (Identity and Access Management) **role**, and then attach policies so that lambda functions using this role can access certain AWS services like IoT data.
 
@@ -143,13 +143,13 @@ You should have the following ready before we start.
 
    (1) Find ARN in Services/Lambda.
 
-   <img src="./images/arn.png" style="zoom:75%; float:left" />
+   <img src="./images/arn.png" style="zoom:70%; float:left" />
 
    
 
    (2) In Alexa Developer Console, paste the ARN in Default Region.
 
-   <img src="./images/endpoint.png" style="zoom:65%; float:left" />
+   <img src="./images/endpoint.png" style="zoom:50%; float:left" />
 
 8. Let's dive into the lambda function!  I modified [sample code - hello world](https://github.com/alexa/skill-sample-python-first-skill/blob/master/module-1/lambda_function.py) by changing HelloWorldIntentHandler into SetLightIntentHandler.  (Remember we have created a custom intent "SetLightIntent" in step 3). 
 
