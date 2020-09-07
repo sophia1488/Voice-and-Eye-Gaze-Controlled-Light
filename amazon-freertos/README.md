@@ -72,8 +72,15 @@ This project is cloned from [aws/amazon-freertos](https://github.com/aws/amazon-
 
 6. Change directories to the root of your FreeRTOS download directory and use the following command to generate the build directory: 
 
-   `mkdir build cmake -DVENDOR=espressif -DBOARD=esp32_wrover_kit -DCOMPILER=xtensa-esp32 -S . -B build`
+   ```
+   mkdir build 
+   cmake -DVENDOR=espressif -DBOARD=esp32_wrover_kit -DCOMPILER=xtensa-esp32 -S . -B build
+   ```
 
 7. Flash and run
 
-   `cd build make all -j4 sudo make flash`
+   ```
+   cd build 
+   make all -j4 
+   sudo make flash
+   ```
